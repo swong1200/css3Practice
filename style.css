@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main Styling */
+body {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Menu */
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+  background-color: #000;
+  padding-left: 10%;
+}
+
+.menu ul {
+  width: 25%;
+  height: 100%;
+  gap: 1em;
+}
+
+.menu ul li {
+  justify-content: center;
+}
+
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 30vh;
+  background-color: #c6bfbf;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 6rem;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.hero p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+/* Content Section */
+.content {
+  width: 100%;
+  min-height: 63vh;
+  gap: 1em;
+  padding-top: 1em;
+}
+
+.content .left {
+  margin-left: 10vw;
+}
+
+.content .right {
+  margin-right: 10vw;
+}
+/* Footer */
+.footer {
+  width: 100%;
+  height: 5.2vh;
+  background-color: #0b4d14;
+  justify-content: space-between;
+}
+
+.footer ul {
+  gap: 1em;
+  margin: 1em 10vw;
+  list-style-type: square;
+  max-width: 25%;
+}
+
+.footer li {
+  color: #fff;
+  padding-right: 20px;
+}
+
+.footer li a {
+  line-height: 1.6;
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+    .footer ul {
+  gap: 0.5em;
+  margin: 1em;
+  
+}
+}
+
+@media (max-width: 650px) {
+  .content {
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    max-width: 80%;
+  }
+
+  .content .left {
+    margin: 0;
+  }
+
+  .content .right {
+    margin: 0;
+  }
+
+
+}
